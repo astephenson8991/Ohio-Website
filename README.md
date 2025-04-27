@@ -52,5 +52,7 @@ The website is built using standard web technologies (HTML, CSS, JavaScript) and
 Usage
 Simply open the index.html file in your web browser to access the home page. Use the navigation bar at the top to visit the pages for Columbus, Cleveland, and Toledo.
 
+Alternatively, you can navigate to the live page via this link: https://astephenson8991.github.io/Ohio-Website/index.html
+
 Contributing
 As this was a school project, contributions are not actively being sought. However, you are welcome to fork the repository to explore the code or adapt it for your own learning purposes.
