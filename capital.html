@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Columbus</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-inter bg-gray-100 text-gray-800">
+
+    <header class="bg-red-700 text-white p-6 text-center text-4xl md:text-6xl font-bold shadow-lg relative overflow-hidden">
+        Columbus
+        <img id="sign" src="images/columbus.jpeg" alt="Columbus skyline" class="w-20 h-20 md:w-24 md:h-24 rounded-full border-4 border-white absolute right-4 top-1/2 transform -translate-y-1/2 shadow-md object-cover">
+    </header>
+
+    <nav class="bg-gray-800 text-white p-4 shadow-md sticky top-0 z-20">
+        <ul id="navbar" class="flex flex-col md:flex-row justify-center space-y-2 md:space-y-0 md:space-x-8">
+            <li><a href="index.html" class="hover:text-gray-400 transition duration-300 ease-in-out">HOME</a></li>
+            <li><a href="capital.html" class="hover:text-gray-400 transition duration-300 ease-in-out">CAPITAL</a></li>
+            <li><a href="cleveland.html" class="hover:text-gray-400 transition duration-300 ease-in-out">CLEVELAND</a></li>
+            <li><a href="toledo.html" class="hover:text-gray-400 transition duration-300 ease-in-out">TOLEDO</a></li>
+        </ul>
+    </nav>
+
+    <div class="container mx-auto p-6 flex flex-col md:flex-row gap-6">
+        <section class="bg-white p-8 rounded-lg shadow-md flex-1">
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-700 mb-4 pb-2 border-b-2 border-gray-300">Columbus, Ohio</h1>
+            <p class="text-gray-700 leading-relaxed mb-6">
+                The capital, Columbus, is an urban city located in central Ohio. It was incorporated in 1834, but became the state capital
+                in 1816. Because of the Erie canal and an 1850 railroad, the development of this area boomed as a hub for transportation
+                and commerce (Britannica, 2023).
+            </p>
+
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-red-700 text-white rounded-lg shadow-md overflow-hidden">
+                    <thead>
+                        <tr class="bg-gray-700 text-gray-200 uppercase text-sm leading-normal">
+                            <th class="py-3 px-6 text-left">City</th>
+                            <th class="py-3 px-6 text-left">Population</th>
+                            <th class="py-3 px-6 text-left">Average Income</th>
+                            <th class="py-3 px-6 text-left">State Avg Income (U.S. Census)</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-gray-200 text-sm font-light">
+                        <tr class="border-b border-gray-600 hover:bg-red-600">
+                            <td class="py-3 px-6 text-left whitespace-nowrap">Columbus</td>
+                            <td class="py-3 px-6 text-left">905,748</td>
+                            <td class="py-3 px-6 text-left">$58,575</td>
+                            <td class="py-3 px-6 text-left">$61,938</td>
+                        </tr>
+                        <tr class="border-b border-gray-600 hover:bg-red-600">
+                            <td class="py-3 px-6 text-left whitespace-nowrap">Cleveland</td>
+                            <td class="py-3 px-6 text-left">361,607</td>
+                            <td class="py-3 px-6 text-left">$33,678</td>
+                            <td class="py-3 px-6 text-left">$61,938</td>
+                        </tr>
+                        <tr class="hover:bg-red-600">
+                            <td class="py-3 px-6 text-left whitespace-nowrap">Toledo</td>
+                            <td class="py-3 px-6 text-left">270,880</td>
+                            <td class="py-3 px-6 text-left">$41,671</td>
+                            <td class="py-3 px-6 text-left">$61,938</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <aside class="bg-gray-200 p-6 rounded-lg shadow-md md:w-1/4 sticky top-20 h-fit">
+            <h1 class="text-2xl font-semibold mb-4 border-b-2 border-gray-400 pb-2">External Links</h1>
+            <ol class="list-disc list-inside space-y-3">
+                <li><a href="https://new.columbus.gov/Home" target="_blank" class="text-blue-600 hover:underline">Official Website</a></li>
+                <li><a href="https://www.google.com/maps/place/Columbus,+OH/@39.9828347,-83.1556367,
+                    11z/data=!3m1!4b1!4m6!3m5!1s0x883889c1b990de71:0xe43266f8cfb1b533!8m2!3d39.9611755!4d-82.9987942
+                    !16zL20vMDFzbW0?entry=ttu" target="_blank" class="text-blue-600 hover:underline">Map Link</a></li>
+                <li><a href="https://www.famousbirthdays.com/city/columbus-oh.html" target="_blank" class="text-blue-600 hover:underline">Famous People</a></li>
+            </ol>
+        </aside>
+    </div>
+
+    <footer class="bg-gray-800 text-white p-6 text-center mt-8">
+        <div>
+            <p class="text-sm">
+                <strong>References:</strong> Britannica, The Editors of Encyclopaedia. "Columbus".
+                Encyclopedia Britannica, 5 Oct. 2023, https://www.britannica.com/place/Columbus-Ohio.
+                Accessed 5 October 2023.<br>U.S. Census Bureau Quickfacts: Columbus City, Ohio, Toledo
+                City, Ohio, Cleveland City, Ohio, https://www.census.gov/quickfacts/fact/table/columbu
+                scityohio,toledocityohio,clevelandcityohio/PST040222.
+                Accessed 5 Oct. 2023.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

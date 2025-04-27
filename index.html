@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The State of Ohio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
+</head>
+<body class="font-inter bg-gray-100 text-gray-800">
+
+    <header class="bg-red-700 text-white p-6 text-center text-4xl md:text-6xl font-bold shadow-lg relative overflow-hidden">
+        The State of Ohio
+        <img id="sign" src="images/sign.jpeg" alt="Welcome to Ohio road sign" class="w-20 h-20 md:w-24 md:h-24 rounded-full border-4 border-white absolute right-4 top-1/2 transform -translate-y-1/2 shadow-md object-cover">
+    </header>
+
+    <nav class="bg-gray-800 text-white p-4 shadow-md sticky top-0 z-20">
+        <ul id="navbar" class="flex flex-col md:flex-row justify-center space-y-2 md:space-y-0 md:space-x-8">
+            <li><a href="index.html" class="hover:text-gray-400 transition duration-300 ease-in-out">HOME</a></li>
+            <li><a href="capital.html" class="hover:text-gray-400 transition duration-300 ease-in-out">CAPITAL</a></li>
+            <li><a href="cleveland.html" class="hover:text-gray-400 transition duration-300 ease-in-out">CLEVELAND</a></li>
+            <li><a href="toledo.html" class="hover:text-gray-400 transition duration-300 ease-in-out">TOLEDO</a></li>
+        </ul>
+    </nav>
+
+    <div class="container mx-auto p-6 flex flex-col md:flex-row gap-6">
+        <aside class="bg-gray-200 p-6 rounded-lg shadow-md md:w-1/4 sticky top-20 h-fit">
+            <h1 class="text-2xl font-semibold mb-4 border-b-2 border-gray-400 pb-2">External Links</h1>
+            <ol class="list-disc list-inside space-y-3">
+                <li><a href="https://ohio.gov" target="_blank" class="text-blue-600 hover:underline">Official Website</a></li>
+                <li><a href="https://maps.app.goo.gl/dtePPQDMAhbam5tFA" target="_blank" class="text-blue-600 hover:underline">Map Link</a></li>
+                <li><a href="https://www.famousbirthdays.com/birthplace/ohio.html" target="_blank" class="text-blue-600 hover:underline">Famous People</a></li>
+            </ol>
+        </aside>
+
+        <section class="bg-white p-8 rounded-lg shadow-md flex-1">
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-700 mb-4 pb-2 border-b-2 border-gray-300">Ohio</h1>
+            <p class="text-gray-700 leading-relaxed mb-6">
+                Ohio, also known as the Buckeye State, is a North American state located in the Midwest region of the country.
+                It was admitted as the 17th state on March 1st, 1803 and now has a population of 11,756,058 residents. It is located
+                below Lake Erie and is bordered by West Virginia, Kentucky, Michigan, Indiana and Pennsylvania. Originally, the capital
+                of the state was Zanesville and Chillicothe, but was changed to Columbus in 1816 (Knepper, 2023).
+            </p>
+
+            <form name="myform" class="bg-yellow-100 p-6 rounded-lg shadow-inner max-w-md mx-auto">
+                <h4 class="text-lg font-semibold mb-4 text-center">Enter your information for weekly emails.</h4>
+                <div class="mb-4">
+                    <input type="text" id="fname" name="fname" placeholder="First Name" class="w-full px-4 py-2 rounded-md border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50">
+                </div>
+                <div class="mb-4">
+                    <input type="text" id="lname" name="lname" placeholder="Last Name" class="w-full px-4 py-2 rounded-md border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50">
+                </div>
+                <div class="mb-4">
+                    <input type="text" id="email" name="email" placeholder="Email" class="w-full px-4 py-2 rounded-md border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50">
+                </div>
+                <div class="mb-4">
+                    <input type="text" id="confirmemail" name="confirmemail" placeholder="Confirm Email" class="w-full px-4 py-2 rounded-md border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50">
+                </div>
+                <div id="message" class="text-red-600 text-sm mb-4 text-center"></div>
+                <div class="mb-4">
+                    <textarea name="question" rows="4" cols="30" placeholder="Input any questions here" class="w-full px-4 py-2 rounded-md border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50"></textarea>
+                </div>
+                <button id="submit" type="submit" class="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+                    Submit
+                </button>
+            </form>
+        </section>
+    </div>
+
+    <footer class="bg-gray-800 text-white p-6 text-center mt-8">
+        <div>
+            <p class="text-sm">
+                <strong>References:</strong> Knepper, George W. , Aumann, Francis R. and Wallenfeldt, Jeff. "Ohio".
+                Encyclopedia Britannica, 4 Oct. 2023, https://www.britannica.com/place/Ohio-state.
+                Accessed 5 October 2023.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
